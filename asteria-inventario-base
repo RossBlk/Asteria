@@ -1,0 +1,135 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<div id="Inventario">
+	    
+	<ul class="tabs">
+		    
+		<li data-tab="tab-1" class="active">
+			<i class="game game-medicines"></i>
+		</li>
+		    
+		<li data-tab="tab-2">
+			<i class="game game-apothecary"></i>
+		</li>
+		    
+		<li data-tab="tab-3">
+			 <i class="game game-suckered-tentacle"></i> 
+		</li>
+		    
+		<li data-tab="tab-4">
+			<i class="game game-carnivorous-plant"></i> 
+		</li>
+		    
+		<li data-tab="tab-5">
+			<i class="game game-flower-star"></i>
+		</li>
+		    
+		<li data-tab="tab-6">
+			 <i class="game game-gold-scarab"></i>
+		</li>
+		    
+		<li data-tab="tab-7">
+			<i class="game game-heart-bottle"></i>
+		</li>
+		      
+		<li data-tab="tab-8">
+			<i class="game game-feathered-wing"></i>
+		</li>
+		 
+	</ul>
+	  <section class="content-wrapper">   
+		<!--   TAB   --><section class="tab-content tab-active" id="tab-1"><div class="Inv-Titu" style="">
+		 UNGÜENTOS CURATIVOS </div>
+ Ungüento de Somnus +25HP – Precio Nexus: 150ʎ  | Precio Tempest/Warden: 250ʎ - Coste: [1MAG Nexus][2MAG Tempest|Warden] Ungüento de Caléndula +50HP – Precio Nexus: 200ʎ | Precio Tempest/Warden: 300ʎ - Coste: [2MAG Nexus][3MAG Tempest|Warden] Ungüento de Aloe Vera +75HP – Precio Nexus: 250ʎ | Precio Tempest/Warden: 350ʎ - Coste: [3MAG Nexus][4MAG Tempest|Warden]</section>      
+
+
+		<!--   TAB   -->  <section class="tab-content" id="tab-2">2</section>   
+		<!--   TAB   -->  <section class="tab-content" id="tab-3">3</section>   
+		<!--   TAB   -->  <section class="tab-content" id="tab-4">4</section>   
+		<!--   TAB   -->  <section class="tab-content" id="tab-5">5</section>   
+		<!--   TAB   -->  <section class="tab-content" id="tab-6">6</section>   
+		<!--   TAB   -->  <section class="tab-content" id="tab-7">7</section>   
+		<!--   TAB   -->  <section class="tab-content" id="tab-8">8</section>   
+		<!--   fin de tabs   --></section>
+</div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> <style>#Inventario {
+  width:800px; min-height:200px;
+  padding-top:20px; background:#111;
+  padding-bottom:20px;
+}
+
+/* Slider Inventario */
+#Inventario ul.tabs {
+  list-style-type:none;
+  width:760px;
+  margin-top:10px; 
+}
+
+#Inventario .tabs li {
+  display:inline-block;
+  height:50px; width:90px;
+  line-height:50px;
+  cursor:pointer;
+  font-family: Poppins;
+  background:#333;
+  font-size:15px;
+  color:#ddd;
+  text-align:center;
+}
+
+#Inventario .tabs li:nth-child(1) { margin-left:-15px;}
+#Inventario .tabs li.active {
+  background-color:#222;
+  color:#e74c3c;
+}
+#Inventario .content-wrapper {
+  width:100%;
+  max-width:760px;
+  position:relative;
+  margin:0 auto 0;
+}
+#Inventario .content-wrapper .tab-content {
+  width:760px;
+  margin-left:-20px;
+  min-height:100px;
+  background:#222;
+  display:none;
+}
+#Inventario .content-wrapper .tab-active {
+  display:table;
+  table-layout:fixed;
+  padding:20px;
+  color:#FFF;
+}
+
+.Inv-Titu {
+  font-family:Poppins;
+  font-size:17px;
+  color:#757daf;
+  letter-spacing:6px;
+  text-align:center;
+  border-bottom:1px solid #333; 
+  padding:20px;
+  margin-bottom:20px;
+}
+
+</style>
+
+
+<script>    $(function(){
+
+        $('.tabs li').on('click', function(){
+            $('.tabs li').removeClass('active');
+            $(this).addClass('active');
+
+            var tabBtn = $(this).data('tab'),
+                tabCon = $('.tab-content[id^="'+tabBtn+'"]');
+
+          $('.tab-content[id^="tab"]').removeClass('tab-active');
+          $('.tab-content[id="'+tabBtn+'"]').addClass('tab-active');
+
+        })
+    })</script>
+
+
+  <link rel="stylesheet" href="https://files.jcink.net/uploads/ninelie/icon/game_icons/ninelie_game_icons.css" />
+  <link href="//solrainha.github.io/honeybee/honeybee.css" rel="stylesheet"/>
